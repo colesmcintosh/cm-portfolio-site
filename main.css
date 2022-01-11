@@ -1,0 +1,17 @@
+#topNavItem {
+    display: inline-block;
+    border-color: black;
+    border-style: solid;
+    border: 5px;
+}
+nav {
+    display: inline-block;
+}
+
+h1 {
+    text-align: left;
+}
+
+footer {
+    display: inline-block;
+}

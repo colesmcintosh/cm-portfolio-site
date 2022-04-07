@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+  <image class="logo" alt="CM-Logo" src="{{ url_for('static', filename="cm_logo.png") }}">
+<div class="day">I hope you're having a great <b id="day-name">{{ days }}</b>!</div>
+</div>
+{% endblock %}

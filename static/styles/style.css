@@ -1,0 +1,227 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #E7DFDD;
+    text-align: center;
+    background: #0e0b16;
+    
+}
+
+.navbar {
+    width: 100%;
+    text-align: right;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #E7DFDD;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    transition: all 1s;
+}
+
+.navbar a:hover {
+    background-color: #E7DFDD;
+    color: #0e0b16;
+}
+
+.nav-logo {
+    float: left;
+    height: 1.5rem;
+    width: 1.5rem;
+    
+}
+
+.logo {
+    height:35%; 
+    width:35%; 
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.job {
+    padding: 2rem;
+    margin-top: 2rem;
+    background: linear-gradient(to right, #4717F6, #A239CA);
+    border-radius: 7px;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  color: #E7DFDD;
+  text-shadow: -2px 0px 5px #A239CA;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.company {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #E7DFDD;
+}
+
+.duration {
+  font-size: 1rem;
+  font-weight: bold;
+  /* Italicize the text */
+  font-style: italic;
+}
+.content {
+    margin: 1rem 0;
+}
+
+.all-content {
+    margin: 2rem;
+    animation: fade-in 2s ease-in-out;
+    border-radius: 5px;
+    color: #E7DFDD;
+    padding: 2rem;
+}
+
+.thanks {
+    font-style: italic;
+    margin: 1rem 0;
+    animation: fade-in 2s ease-in-out;
+}
+
+.day{
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    animation: fade-in 3s ease-in-out;
+}
+
+#day-name{
+    color: #A239CA;
+}
+
+.about-me{
+    display: flex;
+    animation: fade-in 1s ease-in-out;
+}
+
+.me-text {
+    margin: 0 1rem;
+    font-size: 1.25rem;
+    color: #E7DFDD;
+    text-align: left;
+}
+
+.port {
+    width: 360px;
+    height: 520px;
+    border-radius: 10px;
+}
+
+#skills > ul > li {
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #4717F6, #A239CA);
+    color: #E7DFDD;
+    font-size: 1rem;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+#contact > a {
+    text-decoration: none;
+    color: #E7DFDD;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 1rem 1.5rem;
+    transition: all 1s;
+    background: linear-gradient(to right, #4717F6, #A239CA);
+}
+
+#contact > a:hover {
+    background: #E7DFDD;
+    color: #0e0b16;
+}
+
+#skills {
+    display: flex;
+    color: #E7DFDD;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.all-content > .project {
+    margin: 2rem 7rem;
+    color: #E7DFDD;
+    border-radius: 5px;
+    padding: 2rem 0;
+    background: linear-gradient(to right, #4717F6, #A239CA);
+    
+}
+
+.code, .app {
+    text-decoration: none;
+    background: #0e0b16;
+    color: #E7DFDD;
+    padding: .5rem;
+    border-radius: 5px;
+    margin: 2rem;
+    transition: all 1s;
+}
+
+.code:hover, .app:hover {
+        background: #E7DFDD;
+        color: #0e0b16;
+}
+
+.project-title{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E7DFDD;
+}
+
+.description {
+    font-size: 1rem;
+    color: #E7DFDD;
+    margin-bottom: 3rem;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes font-size-up {
+  from {
+    font-size: 1.10rem;
+    padding: 0.55rem;
+  }
+  to {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}

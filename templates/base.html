@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cole McIntosh's Resume</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<!-- Create inline nav bar at the top of the page -->
+<body>
+    <div class="navbar">
+      <a style="background: transparent;"href="{{ url_for('index') }}"><image class="nav-logo" alt="CM" src="{{ url_for('static', filename='cm_web.png') }}"/></a>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('experience') }}">Experience</a>
+        <a href="{{ url_for('skills') }}">Skills</a>
+        <a href="{{ url_for('projects') }}">Projects</a>
+        <a href="{{ url_for('certs') }}">Certifications</a>
+        <a href="{{ url_for('about') }}">About me</a>
+    </div>
+    <body>
+    {% block content %}
+    {% endblock %}
+    </body>
+  </div>
+</html>

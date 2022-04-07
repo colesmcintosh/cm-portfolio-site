@@ -1,2 +1,2 @@
-# My resume in a web page!
+# Portfolio site
 > A little bit about me.

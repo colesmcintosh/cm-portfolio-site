@@ -148,8 +148,8 @@ body {
         flex-direction: column;
     }
     .contact-logo {
-        height: 40%;
-        width: 40%;
+        height: 30%;
+        width: 30%;
         margin-top: 0.10rem;
     }
     .all-content#sep-contact > a {

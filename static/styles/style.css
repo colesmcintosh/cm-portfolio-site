@@ -89,8 +89,7 @@ body {
     animation: fade-in 2s ease-in-out;
     border-radius: 5px;
     color: #E7DFDD;
-    padding: 2rem;
-    width: fit-content;
+    padding: 1rem;
 }
 
 .thanks {

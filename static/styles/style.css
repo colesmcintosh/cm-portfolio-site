@@ -162,6 +162,13 @@ body {
         padding: 0.20rem;
         margin: 0 1rem;
     }
+    #contact > a {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: .25rem 1rem;
+    }
 }
 
 @media screen and (max-width: 510px) {
@@ -222,7 +229,7 @@ body {
     background: linear-gradient(to right, #4717F6, #A239CA);
 }
 
-#contact > a:hover {
+#contact > a:hover, #sep-contact > a:hover {
     background: #E7DFDD;
     color: #0e0b16;
 }

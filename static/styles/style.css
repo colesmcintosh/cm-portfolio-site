@@ -81,9 +81,7 @@ body {
   font-weight: bold;
   /* Italicize the text */
   font-style: italic;
-}
-.content {
-    margin: 1rem 0;
+  margin: 1rem;
 }
 
 .all-content {
@@ -92,6 +90,7 @@ body {
     border-radius: 5px;
     color: #E7DFDD;
     padding: 2rem;
+    width: fit-content;
 }
 
 .thanks {

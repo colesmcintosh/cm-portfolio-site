@@ -34,10 +34,10 @@ def experience():
 def skills():
     return render_template('skills.html')
 
-@app.route('/edu')
-def edu():
-    return render_template('edu.html')
-
 @app.route('/certs')
 def certs():
     return render_template('certs.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')

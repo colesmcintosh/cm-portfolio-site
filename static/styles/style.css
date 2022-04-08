@@ -168,12 +168,10 @@ body {
 }
 
 .all-content > .project {
-    margin: 2rem 7rem;
-    color: #E7DFDD;
-    border-radius: 5px;
-    padding: 2rem 0;
+    padding: 2rem;
+    margin-top: 2rem;
     background: linear-gradient(to right, #4717F6, #A239CA);
-    
+    border-radius: 7px;  
 }
 
 .code, .app {

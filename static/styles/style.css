@@ -157,6 +157,11 @@ body {
         justify-content: center;
         margin: 2rem 5rem;
     }
+    
+    .navbar a {
+        padding: 0.20rem;
+        margin: 0 1rem;
+    }
 }
 
 @media screen and (max-width: 510px) {

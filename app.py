@@ -9,8 +9,14 @@ app = Flask(__name__)
 @app.route('/index', methods=['GET', 'POST'])
 def index():
     today = datetime.today()
-    days = calendar.day_name[calendar.weekday(year=today.year, month=today.month, day=today.day)]
-    return render_template('index.html', days=days)
+    month = calendar.month_name[today.month]
+    day = today.day
+    if day == 1:
+        month = f"<div class='day'>I hope you have a great <b id='day-name'>{month}</b> ahead!</div>"
+    else:
+        month = f"<div class='day'>I hope you're having a great <b id='day-name'>{month}</b> so far!</div>"
+
+    return render_template('index.html', month=month)
 
 @app.route('/projects')
 def projects():

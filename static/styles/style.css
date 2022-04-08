@@ -126,6 +126,26 @@ body {
     border-radius: 10px;
 }
 
+@media screen and (max-width: 725px) {
+    .port {
+        width: 100%;
+        height: auto;
+    }
+    .me-text {
+        margin: 0;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .day {
+        margin-top: 7rem;
+    }
+}
+
+
 #skills > ul > li {
     border-radius: 5px;
     padding: 0.5rem;
@@ -138,7 +158,6 @@ body {
 #contact {
     display: flex;
     justify-content: center;
-    float: left;
 }
 
 #contact > a {

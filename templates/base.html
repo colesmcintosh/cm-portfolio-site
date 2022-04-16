@@ -10,10 +10,10 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <!-- Create inline nav bar at the top of the page -->
-<body>
-    <div class="navbar">
-      <a style="background: transparent;"href="{{ url_for('index') }}"><image class="nav-logo" alt="CM" src="{{ url_for('static', filename='cm_web.png') }}"/></a>
-        <a href="{{ url_for('index') }}">Home</a>
+<!--
+    <div class="dt-navbar">
+      <a style="background: transparent;"href="/"><image id="nav-logo" class="nav-logo" alt="CM" src="{{ url_for('static', filename='cm_web.png') }}"/></a>
+        <a href="/">Home</a>
         <a href="{{ url_for('experience') }}">Experience</a>
         <a href="{{ url_for('skills') }}">Skills</a>
         <a href="{{ url_for('projects') }}">Projects</a>
@@ -21,9 +21,55 @@
         <a href="{{ url_for('about') }}">About me</a>
         <a href="{{ url_for('contact') }}">Contact</a>
     </div>
+    -->
+    <header class="header">
+      <nav class="navbar">
+        <a style="background: transparent;"href="/"><img id="nav-logo" class="nav-logo" alt="CM" src="{{ url_for('static', filename='cm_web.png') }}"/></a>
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('experience') }}">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('skills') }}">Skills</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('certs') }}">Certifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about') }}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+  </header>
     <body>
     {% block content %}
     {% endblock %}
     </body>
-  </div>
-</html>
+  <footer>
+    <div class="footer-container">
+    
+    <a href="mailto:colemcitosh6@gmail.com"><img src="https://cdn-icons.flaticon.com/png/512/2549/premium/2549872.png?token=exp=1650063646~hmac=5fcb633699d9b4edf522510663c9078c"/alt="email"></a>
+
+    <a href="https://www.linkedin.com/in/colemcintosh" target="_blank"><img src="https://cdn-icons.flaticon.com/png/512/3128/premium/3128219.png?token=exp=1650063665~hmac=02181095416bd4a9a71a452c79d82577" alt="linkedin" /></a>
+    
+    <a href="https://github.com/colesmcintosh" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="github" /></a>
+    
+    <a href="{{ url_for('static', filename="Cole_McIntosh_Resume.pdf") }}" target="_blank"><img src="https://cdn-icons.flaticon.com/png/512/1346/premium/1346836.png?token=exp=1650063461~hmac=dc47e688b9153a38b01293f339b010c8" alt="resume" /></a>
+    </div>
+  
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

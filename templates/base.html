@@ -62,13 +62,13 @@
   <footer>
     <div class="footer-container">
     
-    <a href="mailto:colemcitosh6@gmail.com"><img src="https://cdn-icons.flaticon.com/png/512/2549/premium/2549872.png?token=exp=1650063646~hmac=5fcb633699d9b4edf522510663c9078c"/alt="email"></a>
+    <a href="mailto:colemcitosh6@gmail.com"><img src="{{ url_for('static', filename='email.png') }}" alt="email"></a>
 
-    <a href="https://www.linkedin.com/in/colemcintosh" target="_blank"><img src="https://cdn-icons.flaticon.com/png/512/3128/premium/3128219.png?token=exp=1650063665~hmac=02181095416bd4a9a71a452c79d82577" alt="linkedin" /></a>
+    <a href="https://www.linkedin.com/in/colemcintosh" target="_blank"><img src="{{ url_for('static', filename='linkedin.png') }}" alt="linkedin" /></a>
     
-    <a href="https://github.com/colesmcintosh" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="github" /></a>
+    <a href="https://github.com/colesmcintosh" target="_blank"><img src="{{ url_for('static', filename='gh.png') }}" alt="github" /></a>
     
-    <a href="{{ url_for('static', filename="Cole_McIntosh_Resume.pdf") }}" target="_blank"><img src="https://cdn-icons.flaticon.com/png/512/1346/premium/1346836.png?token=exp=1650063461~hmac=dc47e688b9153a38b01293f339b010c8" alt="resume" /></a>
+    <a href="{{ url_for('static', filename="Cole_McIntosh_Resume.pdf") }}" target="_blank"><img src="{{ url_for('static', filename='resume.png') }}" alt="resume" /></a>
     </div>
   
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
